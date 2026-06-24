@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="A practical e-bike guide for choosing, riding, maintaining, and securing an electric bicycle."
+    >
+    <title>E-Bike Field Guide</title>
+    <link rel="preload" href="assets/hero-ebike.png" as="image">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="E-Bike Field Guide home">
+        <span class="brand-mark" aria-hidden="true">E</span>
+        <span>E-Bike Field Guide</span>
+      </a>
+      <nav>
+        <a href="#choose">Choose</a>
+        <a href="#range">Range</a>
+        <a href="#care">Care</a>
+        <a href="#compare">Compare</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-media" aria-hidden="true">
+          <img src="assets/hero-ebike.png" alt="">
+        </div>
+        <div class="hero-content">
+          <p class="eyebrow">Commuters, cargo haulers, weekend riders</p>
+          <h1 id="hero-title">E-Bike Field Guide</h1>
+          <p class="lede">
+            A practical buying and ownership guide for electric bikes: what to compare,
+            how much range to expect, and what to maintain before it gets expensive.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#choose">Find your type</a>
+            <a class="button secondary" href="#compare">Use the checklist</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="quick-stats" aria-label="Key e-bike planning numbers">
+        <div>
+          <strong>20-28 mph</strong>
+          <span>common assisted top speeds by class</span>
+        </div>
+        <div>
+          <strong>25-70 mi</strong>
+          <span>realistic range spread across terrain and loads</span>
+        </div>
+        <div>
+          <strong>300-750 W</strong>
+          <span>typical motor rating range for daily riding</span>
+        </div>
+      </section>
+
+      <section id="choose" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Start with the job</p>
+          <h2>Pick the bike around the ride, not the spec sheet.</h2>
+        </div>
+        <div class="type-grid">
+          <article class="type-card">
+            <span class="type-icon" aria-hidden="true">C</span>
+            <h3>City Commuter</h3>
+            <p>Best for pavement, daily errands, and predictable routes. Prioritize lights, fenders, rack mounts, and upright geometry.</p>
+          </article>
+          <article class="type-card">
+            <span class="type-icon" aria-hidden="true">G</span>
+            <h3>Cargo</h3>
+            <p>Best for kids, groceries, and car-replacement trips. Look for hydraulic brakes, a stable kickstand, and battery capacity.</p>
+          </article>
+          <article class="type-card">
+            <span class="type-icon" aria-hidden="true">T</span>
+            <h3>Trail</h3>
+            <p>Best for rough surfaces and climbing. Suspension, tire clearance, torque, and local trail rules matter more than top speed.</p>
+          </article>
+          <article class="type-card">
+            <span class="type-icon" aria-hidden="true">F</span>
+            <h3>Folding</h3>
+            <p>Best for apartments, transit, and small storage. Check folded size, carry weight, hinge quality, and replacement tire availability.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="range" class="section range-band">
+        <div class="section-heading">
+          <p class="eyebrow">Range reality</p>
+          <h2>Battery range is a budget, not a promise.</h2>
+          <p>
+            Advertised range usually assumes moderate speed, low assist, flat roads,
+            fair weather, and a lighter rider. Plan with a margin.
+          </p>
+        </div>
+        <div class="range-layout">
+          <div class="range-meter" aria-label="Range planning meter">
+            <div class="meter-row">
+              <span>Short errand</span>
+              <div class="meter"><span style="width: 28%"></span></div>
+            </div>
+            <div class="meter-row">
+              <span>Daily commute</span>
+              <div class="meter"><span style="width: 54%"></span></div>
+            </div>
+            <div class="meter-row">
+              <span>Cargo route</span>
+              <div class="meter"><span style="width: 72%"></span></div>
+            </div>
+          </div>
+          <ul class="plain-list">
+            <li>Use watt-hours, route length, hills, payload, and assist level to compare real range.</li>
+            <li>Cold weather and high speed can cut range sharply.</li>
+            <li>A removable battery is useful when the bike parks far from an outlet.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="care" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Own it well</p>
+          <h2>The maintenance items that matter first.</h2>
+        </div>
+        <div class="care-list">
+          <article>
+            <h3>Brakes</h3>
+            <p>E-bikes are heavier and faster than many analog bikes. Inspect pads often and favor hydraulic discs for cargo or hills.</p>
+          </article>
+          <article>
+            <h3>Tires</h3>
+            <p>Keep pressure in range and choose puncture-resistant tires if your route includes glass, debris, or rough shoulders.</p>
+          </article>
+          <article>
+            <h3>Drivetrain</h3>
+            <p>Mid-drive motors add stress to chains and cassettes. Clean and lubricate regularly, then replace worn parts early.</p>
+          </article>
+          <article>
+            <h3>Battery</h3>
+            <p>Store it dry, avoid heat, use the supplied charger, and do not ignore damage, swelling, smells, or unusual heat.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="compare" class="section checklist-section">
+        <div class="section-heading">
+          <p class="eyebrow">Shopping checklist</p>
+          <h2>Compare the details that show up after purchase.</h2>
+        </div>
+        <div class="checklist">
+          <label><input type="checkbox"> Test ride on the steepest hill you expect to climb</label>
+          <label><input type="checkbox"> Confirm local Class 1, 2, and 3 rules</label>
+          <label><input type="checkbox"> Verify replacement battery and charger availability</label>
+          <label><input type="checkbox"> Check rack, child seat, basket, and trailer compatibility</label>
+          <label><input type="checkbox"> Price a lock, helmet, pump, lights, and flat kit</label>
+          <label><input type="checkbox"> Ask who services the motor, display, and battery system</label>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>E-Bike Field Guide</p>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
