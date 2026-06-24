@@ -3,607 +3,587 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta
-      name="description"
-      content="A practical e-bike guide for choosing, riding, maintaining, and securing an electric bicycle."
-    >
-    <title>E-Bike Field Guide</title>
-    <link rel="preload" href="assets/hero-ebike.png" as="image">
+    <meta name="description" content="Review-focused e-bike category guide with manufacturers, ratings, images, and detailed model pages.">
+    <title>E-Bike Review Index</title>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header class="site-header" aria-label="Primary navigation">
-      <a class="brand" href="#top" aria-label="E-Bike Field Guide home">
+    <header class="site-header">
+      <a class="brand" href="index.html">
         <span class="brand-mark" aria-hidden="true">E</span>
-        <span>E-Bike Field Guide</span>
+        <span>E-Bike Review Index</span>
       </a>
       <nav>
-        <a href="#classes">Classes</a>
-        <a href="#choose">Choose</a>
-        <a href="#recommendations">Models</a>
-        <a href="#range">Range</a>
-        <a href="#battery">Battery</a>
-        <a href="#compare">Checklist</a>
+        <a href="index.html#categories">Categories</a>
+        <a href="index.html#top-picks">Top Picks</a>
+        <a href="index.html#manufacturers">Manufacturers</a>
+        <a href="index.html#sources">Sources</a>
       </nav>
     </header>
-
     <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-media" aria-hidden="true">
-          <img src="assets/hero-ebike.png" alt="">
+      <section class="review-hero">
+        <div class="review-hero-media">
+          <img src="assets/hero-ebike.png" alt="Modern electric bicycle on a city route">
         </div>
-        <div class="hero-content">
-          <p class="eyebrow">Commuters, cargo haulers, weekend riders</p>
-          <h1 id="hero-title">E-Bike Field Guide</h1>
-          <p class="lede">
-            A practical buying and ownership guide for electric bikes: what to compare,
-            how much range to expect, and what to maintain before it gets expensive.
-          </p>
+        <div class="review-hero-content">
+          <p class="eyebrow">2026 buyer-oriented review hub</p>
+          <h1>E-Bike Review Index</h1>
+          <p class="lede">A category-first map of e-bike manufacturers and models, with quick reviews, estimated star ratings, specs, images, and deeper model pages.</p>
           <div class="hero-actions">
-            <a class="button primary" href="#choose">Find your type</a>
-            <a class="button secondary" href="#compare">Use the checklist</a>
+            <a class="button primary" href="#categories">Browse categories</a>
+            <a class="button secondary" href="#top-picks">See top picks</a>
           </div>
         </div>
       </section>
 
-      <section class="quick-stats" aria-label="Key e-bike planning numbers">
-        <div>
-          <strong>20-28 mph</strong>
-          <span>common assisted top speeds in the U.S. class system</span>
-        </div>
-        <div>
-          <strong>&lt;750 W</strong>
-          <span>federal low-speed e-bike motor threshold</span>
-        </div>
-        <div>
-          <strong>UL 2849</strong>
-          <span>whole-system electrical safety certification to look for</span>
-        </div>
+      <section class="quick-stats">
+        <div><strong>30</strong><span>manufacturers mapped</span></div>
+        <div><strong>12</strong><span>shopping categories</span></div>
+        <div><strong>10</strong><span>detailed model reviews</span></div>
       </section>
 
-      <section id="classes" class="section">
+      <section id="categories" class="section">
         <div class="section-heading">
-          <p class="eyebrow">Rules first</p>
-          <h2>Know what counts as an e-bike before comparing models.</h2>
-          <p>
-            In U.S. federal consumer-product law, a low-speed electric bicycle has
-            pedals, less than 750 watts of motor power, and cannot exceed 20 mph
-            on motor power alone with the test rider specified in the statute.
-            State and local riding rules still decide where each bike can go.
-          </p>
+          <p class="eyebrow">Start by use case</p>
+          <h2>Categories make the market easier to compare.</h2>
+          <p>Most buyers should choose a category first, then compare two or three models inside that category. A great cargo bike can be a poor apartment bike; a great road e-bike can be the wrong grocery hauler.</p>
         </div>
-        <div class="class-grid" aria-label="Common e-bike classes">
-          <article class="class-card">
-            <span class="class-number">1</span>
-            <h3>Pedal assist</h3>
-            <p>Motor helps only while you pedal and stops assisting at 20 mph.</p>
-            <strong>Best fit:</strong>
-            <span>paths, commuting, riders who want the broadest access.</span>
-          </article>
-          <article class="class-card">
-            <span class="class-number">2</span>
-            <h3>Throttle capable</h3>
-            <p>Motor can propel the bike without pedaling and stops assisting at 20 mph.</p>
-            <strong>Best fit:</strong>
-            <span>stop-and-go errands, mobility support, heavier cargo starts.</span>
-          </article>
-          <article class="class-card">
-            <span class="class-number">3</span>
-            <h3>Speed pedal assist</h3>
-            <p>Motor helps only while you pedal and stops assisting at 28 mph.</p>
-            <strong>Best fit:</strong>
-            <span>longer road commutes where local rules allow it.</span>
-          </article>
-        </div>
-        <div class="notice">
-          <strong>Field check:</strong>
-          avoid bikes marketed as e-bikes if they lack working pedals, exceed the
-          legal class speed, or advertise motorcycle-like power. Those may be
-          regulated as mopeds or motorcycles instead of bicycles.
-        </div>
-      </section>
-
-      <section id="choose" class="section">
-        <div class="section-heading">
-          <p class="eyebrow">Start with the job</p>
-          <h2>Pick the bike around the ride, not the spec sheet.</h2>
-          <p>
-            A good e-bike is boring in the right ways: it fits, stops confidently,
-            carries what you need, can be serviced nearby, and uses a battery
-            system you are comfortable storing at home.
-          </p>
-        </div>
-        <div class="type-grid">
-          <article class="type-card">
-            <span class="type-icon" aria-hidden="true">C</span>
-            <h3>City Commuter</h3>
-            <p>Best for pavement, daily errands, and predictable routes. Prioritize lights, fenders, rack mounts, upright geometry, and tires that shrug off debris.</p>
-          </article>
-          <article class="type-card">
-            <span class="type-icon" aria-hidden="true">G</span>
-            <h3>Cargo</h3>
-            <p>Best for kids, groceries, and car-replacement trips. Look for hydraulic brakes, a stable kickstand, tested accessories, and a payload rating you will not exceed.</p>
-          </article>
-          <article class="type-card">
-            <span class="type-icon" aria-hidden="true">T</span>
-            <h3>Trail</h3>
-            <p>Best for rough surfaces and climbing. Suspension, tire clearance, torque, and local trail rules matter more than top speed or throttle power.</p>
-          </article>
-          <article class="type-card">
-            <span class="type-icon" aria-hidden="true">F</span>
-            <h3>Folding</h3>
-            <p>Best for apartments, transit, and small storage. Check folded size, carry weight, hinge quality, wheel size, and whether parts are easy to replace.</p>
-          </article>
-        </div>
-        <div class="decision-grid">
-          <article>
-            <h3>Fit and control</h3>
-            <p>Choose a frame you can stand over, mount with a loaded rack, and steer slowly in a parking lot. Heavy bikes punish bad fit.</p>
-          </article>
-          <article>
-            <h3>Brake margin</h3>
-            <p>More speed plus more weight means longer stops. Favor strong disc brakes, especially for hills, wet weather, cargo, or passengers.</p>
-          </article>
-          <article>
-            <h3>Service access</h3>
-            <p>Before buying online, ask a local shop whether it will service that brand, motor system, battery, and brakes.</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="recommendations" class="section recommendations-section">
-        <div class="section-heading">
-          <p class="eyebrow">Model shortlist</p>
-          <h2>Start test rides with these manufacturers and models.</h2>
-          <p>
-            These are field-guide estimates as of June 2026, based on current
-            published reviews, specs, category fit, service practicality, and value.
-            Prices and availability move quickly, so verify the latest details before buying.
-          </p>
-        </div>
-        <div class="model-grid">
-          <article class="model-card featured-model">
-            <div class="model-topline">
-              <span>Best all-around commuter</span>
-              <strong class="stars" aria-label="4.7 out of 5 stars">★★★★☆ 4.7</strong>
-            </div>
-            <h3>Aventon Level.3</h3>
-            <p class="maker">Aventon</p>
-            <p>
-              A strong default pick for riders who want rack, fenders, lights,
-              torque sensing, comfort upgrades, and smart anti-theft features
-              without premium-bike pricing.
-            </p>
-            <dl class="model-notes">
-              <div><dt>Good fit</dt><dd>Daily commuting, errands, mixed city riding.</dd></div>
-              <div><dt>Watch</dt><dd>Heavy enough that stairs and tight apartment storage matter.</dd></div>
-            </dl>
-            <a href="https://www.bicycling.com/bikes-gear/a70894696/aventon-level-3-e-bike-review/">Review source</a>
+        <div class="category-grid">
+          <article class="category-card">
+            <h3>Best Overall</h3>
+            <p>Balanced picks that cover commuting, errands, comfort, and ownership support.</p>
+            <ol>
+              <li>Aventon Level.3</li><li>Velotric Discover 2</li><li>Specialized Turbo Vado 5.0</li>
+            </ol>
           </article>
 
-          <article class="model-card">
-            <div class="model-topline">
-              <span>Lightweight value commuter</span>
-              <strong class="stars" aria-label="4.6 out of 5 stars">★★★★☆ 4.6</strong>
-            </div>
-            <h3>Roadster V3</h3>
-            <p class="maker">Ride1Up</p>
-            <p>
-              A cleaner, lighter city bike feel than many direct-to-consumer e-bikes,
-              with torque sensing, hydraulic brakes, and commuter equipment at a
-              sharp price.
-            </p>
-            <dl class="model-notes">
-              <div><dt>Good fit</dt><dd>Riders who want speed and low visual bulk.</dd></div>
-              <div><dt>Watch</dt><dd>Confirm local service options before relying on it for work trips.</dd></div>
-            </dl>
-            <a href="https://www.t3.com/active/cycling/ride1up-roadster-v3-review">Review source</a>
+          <article class="category-card">
+            <h3>Best Budget</h3>
+            <p>Lower-cost models that still have credible brakes, batteries, and everyday usability.</p>
+            <ol>
+              <li>Lectric XP4 750</li><li>Ride1Up Roadster V3</li><li>Aventon Soltera.2</li>
+            </ol>
           </article>
 
-          <article class="model-card">
-            <div class="model-topline">
-              <span>Cargo value</span>
-              <strong class="stars" aria-label="4.5 out of 5 stars">★★★★☆ 4.5</strong>
-            </div>
-            <h3>Abound LR</h3>
-            <p class="maker">Aventon</p>
-            <p>
-              A long-tail cargo bike that makes school runs, groceries, and local
-              car-replacement trips realistic without jumping into premium cargo
-              bike prices.
-            </p>
-            <dl class="model-notes">
-              <div><dt>Good fit</dt><dd>Families and riders replacing short car trips.</dd></div>
-              <div><dt>Watch</dt><dd>It is large and heavy; storage space is part of the purchase.</dd></div>
-            </dl>
-            <a href="https://www.tomsguide.com/vehicle-tech/electric-bikes/aventon-abound-lr-review">Review source</a>
+          <article class="category-card">
+            <h3>Best Commuter</h3>
+            <p>Rack, fenders, lights, predictable handling, and enough range for daily trips.</p>
+            <ol>
+              <li>Aventon Level.3</li><li>Gazelle Medeo T9 City</li><li>Trek Verve+ 3</li>
+            </ol>
           </article>
 
-          <article class="model-card">
-            <div class="model-topline">
-              <span>Budget folding utility</span>
-              <strong class="stars" aria-label="4.3 out of 5 stars">★★★★☆ 4.3</strong>
-            </div>
-            <h3>XP4 750</h3>
-            <p class="maker">Lectric</p>
-            <p>
-              A high-value folding e-bike with strong range claims, hydraulic brakes,
-              torque sensing, and enough utility for riders who need trunk or closet
-              storage.
-            </p>
-            <dl class="model-notes">
-              <div><dt>Good fit</dt><dd>Budget buyers who still need power and portability.</dd></div>
-              <div><dt>Watch</dt><dd>Folding does not make it featherweight; lift before buying.</dd></div>
-            </dl>
-            <a href="https://www.wired.com/review/lectric-xp4-750-electric-bike">Review source</a>
+          <article class="category-card">
+            <h3>Best Road / Fitness</h3>
+            <p>Lighter, faster, more bike-like e-bikes for riders who still want exercise.</p>
+            <ol>
+              <li>Ride1Up Roadster V3</li><li>Specialized Turbo Vado SL</li><li>Trek Domane+ SLR</li>
+            </ol>
           </article>
 
-          <article class="model-card">
-            <div class="model-topline">
-              <span>Premium folding</span>
-              <strong class="stars" aria-label="4.2 out of 5 stars">★★★★☆ 4.2</strong>
-            </div>
-            <h3>Carbon Fold 2</h3>
-            <p class="maker">Urtopia</p>
-            <p>
-              A compact carbon-frame folder with low weight for the category,
-              a removable seatpost battery, and impressive optional range for
-              apartment or car-trunk use.
-            </p>
-            <dl class="model-notes">
-              <div><dt>Good fit</dt><dd>Small spaces, multimodal travel, lighter riders.</dd></div>
-              <div><dt>Watch</dt><dd>Payload limit and folded retention are worth checking in person.</dd></div>
-            </dl>
-            <a href="https://www.tomsguide.com/vehicle-tech/electric-bikes/urtopia-carbon-fold-2-more-refined">Review source</a>
+          <article class="category-card">
+            <h3>Best Luxury</h3>
+            <p>Premium systems, dealer support, belt drives, Bosch/Shimano motors, and polished fit.</p>
+            <ol>
+              <li>Gazelle Eclipse C380+</li><li>Riese &amp; Muller Charger4</li><li>Specialized Turbo Vado 5.0</li>
+            </ol>
           </article>
 
-          <article class="model-card">
-            <div class="model-topline">
-              <span>Comfort + power</span>
-              <strong class="stars" aria-label="4.4 out of 5 stars">★★★★☆ 4.4</strong>
-            </div>
-            <h3>Discover 2</h3>
-            <p class="maker">Velotric</p>
-            <p>
-              A comfortable step-through commuter with strong torque, class-mode
-              flexibility, Apple Find My support, integrated rack, lights, and a
-              large battery.
-            </p>
-            <dl class="model-notes">
-              <div><dt>Good fit</dt><dd>Hilly city routes and riders who want a cushier cockpit.</dd></div>
-              <div><dt>Watch</dt><dd>Class toggles put more responsibility on the rider to follow local rules.</dd></div>
-            </dl>
-            <a href="https://www.wired.com/review/velotric-discover-2">Review source</a>
+          <article class="category-card">
+            <h3>Best Cargo / Family</h3>
+            <p>Passenger kits, payload, kickstand stability, and accessory ecosystems matter most.</p>
+            <ol>
+              <li>Aventon Abound LR</li><li>Tern HSD P5i</li><li>Yuba Spicy Curry</li>
+            </ol>
           </article>
 
-          <article class="model-card">
-            <div class="model-topline">
-              <span>Long range</span>
-              <strong class="stars" aria-label="4.1 out of 5 stars">★★★★☆ 4.1</strong>
-            </div>
-            <h3>BQi-C3 Pro</h3>
-            <p class="maker">NIU</p>
-            <p>
-              A dual-battery commuter aimed at riders with range anxiety, with
-              a belt drive and practical equipment for longer urban trips.
-            </p>
-            <dl class="model-notes">
-              <div><dt>Good fit</dt><dd>Longer commutes where charging access is uncertain.</dd></div>
-              <div><dt>Watch</dt><dd>Heavy for a non-cargo bike, with more basic brakes than pricier rivals.</dd></div>
-            </dl>
-            <a href="https://www.tomsguide.com/best-picks/best-electric-bikes">Review source</a>
+          <article class="category-card">
+            <h3>Best Folding</h3>
+            <p>Storage and transport picks; weight still matters as much as folded size.</p>
+            <ol>
+              <li>Lectric XP4 750</li><li>Urtopia Carbon Fold 2</li><li>Tern Vektron P5i</li>
+            </ol>
           </article>
 
-          <article class="model-card">
-            <div class="model-topline">
-              <span>Fat-tire all-rounder</span>
-              <strong class="stars" aria-label="4.3 out of 5 stars">★★★★☆ 4.3</strong>
-            </div>
-            <h3>Aventure.2</h3>
-            <p class="maker">Aventon</p>
-            <p>
-              A stable fat-tire bike for riders who split time between pavement,
-              gravel, parks, and rougher shoulders, with strong power and a confident
-              ride feel.
-            </p>
-            <dl class="model-notes">
-              <div><dt>Good fit</dt><dd>Mixed surfaces, larger riders, weekend exploring.</dd></div>
-              <div><dt>Watch</dt><dd>Too bulky for many apartment, stair, or transit situations.</dd></div>
-            </dl>
-            <a href="https://www.wired.com/review/aventon-aventure2">Review source</a>
+          <article class="category-card">
+            <h3>Best Fat-Tire / All-Terrain</h3>
+            <p>Stable big-tire bikes for rough pavement, gravel, snow, and casual dirt paths.</p>
+            <ol>
+              <li>Aventon Aventure.2</li><li>Radster Trail</li><li>Velotric Nomad</li>
+            </ol>
           </article>
 
-          <article class="model-card">
-            <div class="model-topline">
-              <span>Premium shop-supported commuter</span>
-              <strong class="stars" aria-label="4.5 out of 5 stars">★★★★☆ 4.5</strong>
-            </div>
-            <h3>Turbo Vado 5.0</h3>
-            <p class="maker">Specialized</p>
-            <p>
-              A refined, dealer-supported commuter platform for riders who value
-              smooth power delivery, frame sizing, component quality, and long-term
-              service more than bargain pricing.
-            </p>
-            <dl class="model-notes">
-              <div><dt>Good fit</dt><dd>Serious commuters who want local bike-shop support.</dd></div>
-              <div><dt>Watch</dt><dd>Costs materially more than direct-to-consumer alternatives.</dd></div>
-            </dl>
-            <a href="https://www.techradar.com/best/electric-bike">Review source</a>
+          <article class="category-card">
+            <h3>Best Long Range</h3>
+            <p>Large or dual-battery bikes for riders who cannot charge often.</p>
+            <ol>
+              <li>NIU BQi-C3 Pro</li><li>Urtopia Carbon Fold 2 Dual Battery</li><li>Gazelle Eclipse C380+</li>
+            </ol>
           </article>
 
-          <article class="model-card">
-            <div class="model-topline">
-              <span>Comfort premium</span>
-              <strong class="stars" aria-label="4.4 out of 5 stars">★★★★☆ 4.4</strong>
-            </div>
-            <h3>Eclipse C380+</h3>
-            <p class="maker">Gazelle</p>
-            <p>
-              A high-comfort Dutch-style e-bike with Bosch power, a large battery,
-              Enviolo hub, belt drive, integrated equipment, and excellent daily
-              usability.
-            </p>
-            <dl class="model-notes">
-              <div><dt>Good fit</dt><dd>Comfort-first riders, longer urban rides, low-maintenance drivetrains.</dd></div>
-              <div><dt>Watch</dt><dd>Expensive and heavier than simpler commuter bikes.</dd></div>
-            </dl>
-            <a href="https://www.wired.com/review/gazelle-eclipse">Review source</a>
+          <article class="category-card">
+            <h3>Best Trail / Mountain</h3>
+            <p>Real trail geometry, suspension, brakes, and local trail legality.</p>
+            <ol>
+              <li>Specialized Turbo Levo</li><li>Trek Rail+</li><li>Aventon Ramblas</li>
+            </ol>
+          </article>
+
+          <article class="category-card">
+            <h3>Best Comfort / Seniors</h3>
+            <p>Low step-through frames, upright posture, gentle handling, and predictable assist.</p>
+            <ol>
+              <li>Gazelle Ultimate C380</li><li>Velotric Discover 2</li><li>Aventon Pace</li>
+            </ol>
+          </article>
+
+          <article class="category-card">
+            <h3>Best Low Maintenance</h3>
+            <p>Belt drives, internal hubs, proven systems, and fewer drivetrain chores.</p>
+            <ol>
+              <li>Gazelle Eclipse C380+</li><li>Priority Current Plus</li><li>Tenways CGO600 Pro</li>
+            </ol>
           </article>
         </div>
       </section>
 
-      <section id="range" class="section range-band">
+      <section id="top-picks" class="section review-band">
         <div class="section-heading">
-          <p class="eyebrow">Range reality</p>
-          <h2>Battery range is a budget, not a promise.</h2>
-          <p>
-            Advertised range usually assumes moderate speed, low assist, flat roads,
-            fair weather, and a lighter rider. Plan with a margin.
-          </p>
+          <p class="eyebrow">Detailed reviews</p>
+          <h2>Top models with photos, verdicts, and tradeoffs.</h2>
+          <p>Ratings are field-guide estimates that combine published testing, specs, safety posture, fit for category, service practicality, and value.</p>
         </div>
-        <div class="range-layout">
-          <div class="range-meter" aria-label="Range planning examples">
-            <div class="meter-row">
-              <span>Flat errand</span>
-              <div class="meter"><span style="width: 28%"></span></div>
+        <div class="review-grid">
+          <article class="review-card">
+            <a class="review-image" href="reviews/aventon-level-3.html">
+              <img src="https://cdn.shopify.com/s/files/1/1520/2468/files/01_Level.3_Matte-Aurora_Side_1-bike.jpg?v=1739400464" alt="Aventon Level.3" loading="lazy">
+            </a>
+            <div class="review-body">
+              <div class="review-meta">
+                <span>Best Overall / Commuter</span>
+                <strong>★★★★☆ 4.7</strong>
+              </div>
+              <h3>Aventon Level.3</h3>
+              <p>The safest default recommendation for many first-time buyers because it combines commuter equipment, smooth assist, security tech, dealer availability, and fair pricing.</p>
+              <dl class="mini-specs">
+                <div><dt>Price</dt><dd>$1,899 MSRP, often discounted</dd></div>
+                <div><dt>Range</dt><dd>Up to about 70 miles claimed</dd></div>
+              </dl>
+              <a class="text-link" href="reviews/aventon-level-3.html">Read detailed review</a>
             </div>
-            <div class="meter-row">
-              <span>Mixed commute</span>
-              <div class="meter"><span style="width: 54%"></span></div>
+          </article>
+
+          <article class="review-card">
+            <a class="review-image" href="reviews/ride1up-roadster-v3.html">
+              <img src="https://ride1up.com/wp-content/uploads/2026/03/RV3-MedLrg_Grn-scaled.webp" alt="Ride1Up Roadster V3" loading="lazy">
+            </a>
+            <div class="review-body">
+              <div class="review-meta">
+                <span>Best Budget Road / Fitness</span>
+                <strong>★★★★☆ 4.6</strong>
+              </div>
+              <h3>Ride1Up Roadster V3</h3>
+              <p>A strong value pick if you want an e-bike that still feels close to a normal city or fitness bike.</p>
+              <dl class="mini-specs">
+                <div><dt>Price</dt><dd>About $1,395</dd></div>
+                <div><dt>Range</dt><dd>Roughly 40-45+ miles depending on build and assist</dd></div>
+              </dl>
+              <a class="text-link" href="reviews/ride1up-roadster-v3.html">Read detailed review</a>
             </div>
-            <div class="meter-row">
-              <span>Hills + cargo</span>
-              <div class="meter"><span style="width: 72%"></span></div>
+          </article>
+
+          <article class="review-card">
+            <a class="review-image" href="reviews/aventon-abound-lr.html">
+              <img src="https://cdn.shopify.com/s/files/1/1520/2468/files/01_Abound-LR_Stealth_Side_1-bike.jpg?v=1737999400" alt="Aventon Abound LR" loading="lazy">
+            </a>
+            <div class="review-body">
+              <div class="review-meta">
+                <span>Best Cargo / Family Value</span>
+                <strong>★★★★☆ 4.5</strong>
+              </div>
+              <h3>Aventon Abound LR</h3>
+              <p>The cargo pick for buyers who want real daily utility without jumping into premium cargo-bike pricing.</p>
+              <dl class="mini-specs">
+                <div><dt>Price</dt><dd>About $1,999</dd></div>
+                <div><dt>Range</dt><dd>Up to about 60 miles claimed</dd></div>
+              </dl>
+              <a class="text-link" href="reviews/aventon-abound-lr.html">Read detailed review</a>
             </div>
-          </div>
-          <div class="formula-card">
-            <h3>Simple range math</h3>
-            <p><strong>Battery watt-hours = volts x amp-hours.</strong></p>
-            <p>
-              Divide watt-hours by expected watt-hours per mile. Easy commuting
-              may be near the low end; fast riding, hills, cold weather, soft
-              tires, and cargo push consumption up.
-            </p>
-          </div>
-        </div>
-        <div class="spec-grid">
-          <article>
-            <h3>Battery size</h3>
-            <p>Common commuter packs land around 400-700 Wh. Cargo and long-range models may use larger or dual batteries.</p>
           </article>
-          <article>
-            <h3>Assist level</h3>
-            <p>Eco mode stretches range. Turbo mode makes the bike feel effortless but drains the pack faster.</p>
+
+          <article class="review-card">
+            <a class="review-image" href="reviews/lectric-xp4-750.html">
+              <img src="https://media.wired.com/photos/690547ac162b6af54df5fedd/191:100/w_1280,c_limit/Review-%20Lectric%20XP4%20750%20Electric%20Bike.png" alt="Lectric XP4 750" loading="lazy">
+            </a>
+            <div class="review-body">
+              <div class="review-meta">
+                <span>Best Budget Folding</span>
+                <strong>★★★★☆ 4.3</strong>
+              </div>
+              <h3>Lectric XP4 750</h3>
+              <p>A budget utility folder that makes sense when storage and price matter more than polish.</p>
+              <dl class="mini-specs">
+                <div><dt>Price</dt><dd>$999 base, more for 750/long-range configurations</dd></div>
+                <div><dt>Range</dt><dd>Up to 85 miles claimed; 50+ miles reported in review use</dd></div>
+              </dl>
+              <a class="text-link" href="reviews/lectric-xp4-750.html">Read detailed review</a>
+            </div>
           </article>
-          <article>
-            <h3>Route load</h3>
-            <p>Hills, headwinds, low tire pressure, rough pavement, child seats, and panniers all change the number.</p>
+
+          <article class="review-card">
+            <a class="review-image" href="reviews/urtopia-carbon-fold-2.html">
+              <img src="https://cdn.mos.cms.futurecdn.net/udht5zmi8ZtQWcMGpUAesC-2048-80.jpg" alt="Urtopia Carbon Fold 2" loading="lazy">
+            </a>
+            <div class="review-body">
+              <div class="review-meta">
+                <span>Best Premium Folding</span>
+                <strong>★★★★☆ 4.2</strong>
+              </div>
+              <h3>Urtopia Carbon Fold 2</h3>
+              <p>A lighter, more polished folder for small-space riders who can live with payload and folding-retention tradeoffs.</p>
+              <dl class="mini-specs">
+                <div><dt>Price</dt><dd>About $1,899</dd></div>
+                <div><dt>Range</dt><dd>45 miles claimed, up to 95 with optional battery</dd></div>
+              </dl>
+              <a class="text-link" href="reviews/urtopia-carbon-fold-2.html">Read detailed review</a>
+            </div>
           </article>
-          <article>
-            <h3>Charging plan</h3>
-            <p>A removable battery helps apartment riders and workplaces where the bike parks away from outlets.</p>
+
+          <article class="review-card">
+            <a class="review-image" href="reviews/velotric-discover-2.html">
+              <img src="https://media.wired.com/photos/693c7360fd0148aae4721aa4/191:100/w_1280,c_limit/Review%20Velotric%20Discover%202%20Electric%20Bike%20top%20art%20122025%20SOURCE%20Velotric%20Bike.jpg" alt="Velotric Discover 2" loading="lazy">
+            </a>
+            <div class="review-body">
+              <div class="review-meta">
+                <span>Best Comfort Value</span>
+                <strong>★★★★☆ 4.4</strong>
+              </div>
+              <h3>Velotric Discover 2</h3>
+              <p>A comfortable, powerful step-through with a lot of features for the money, especially for hilly urban routes.</p>
+              <dl class="mini-specs">
+                <div><dt>Price</dt><dd>Often around the mid-$1,000 range</dd></div>
+                <div><dt>Range</dt><dd>Up to 60 throttle / 75 pedal-assist miles claimed</dd></div>
+              </dl>
+              <a class="text-link" href="reviews/velotric-discover-2.html">Read detailed review</a>
+            </div>
           </article>
         </div>
       </section>
 
-      <section id="drive" class="section">
+      <section class="section">
         <div class="section-heading">
-          <p class="eyebrow">Motor feel</p>
-          <h2>Choose the drive system by terrain and service needs.</h2>
+          <p class="eyebrow">More strong contenders</p>
+          <h2>Specialized picks for range, terrain, and premium comfort.</h2>
         </div>
-        <div class="compare-table" role="table" aria-label="E-bike drive system comparison">
-          <div class="table-row table-head" role="row">
-            <span role="columnheader">System</span>
-            <span role="columnheader">Strengths</span>
-            <span role="columnheader">Watch-outs</span>
-          </div>
-          <div class="table-row" role="row">
-            <span role="cell">Rear hub</span>
-            <span role="cell">Simple, often cheaper, good for flatter commuting.</span>
-            <span role="cell">Less natural on steep climbs; rear wheel service can be more involved.</span>
-          </div>
-          <div class="table-row" role="row">
-            <span role="cell">Mid-drive</span>
-            <span role="cell">Uses the bike's gears, climbs efficiently, balanced weight.</span>
-            <span role="cell">Usually costs more and wears chains, cassettes, or belts faster.</span>
-          </div>
-          <div class="table-row" role="row">
-            <span role="cell">Torque sensor</span>
-            <span role="cell">Adds assist in proportion to pedal pressure; smooth and bike-like.</span>
-            <span role="cell">Can cost more, but is worth prioritizing for shared paths and technical riding.</span>
-          </div>
-          <div class="table-row" role="row">
-            <span role="cell">Cadence sensor</span>
-            <span role="cell">Affordable and easy to ride once moving.</span>
-            <span role="cell">May surge after you start pedaling; test it in tight turns and traffic starts.</span>
-          </div>
-        </div>
-      </section>
+        <div class="review-grid">
+          <article class="review-card">
+            <a class="review-image" href="reviews/niu-bqi-c3-pro.html">
+              <img src="https://cdn.mos.cms.futurecdn.net/wf8LbpXFH4UjqQxB2kgc23-2000-80.jpg" alt="NIU BQi-C3 Pro" loading="lazy">
+            </a>
+            <div class="review-body">
+              <div class="review-meta">
+                <span>Best Long Range</span>
+                <strong>★★★★☆ 4.1</strong>
+              </div>
+              <h3>NIU BQi-C3 Pro</h3>
+              <p>The range-anxiety pick: heavy, but unusually practical for long errands or commutes where charging is inconvenient.</p>
+              <dl class="mini-specs">
+                <div><dt>Price</dt><dd>Varies widely by retailer and sale</dd></div>
+                <div><dt>Range</dt><dd>Up to 90 miles claimed and supported by testing coverage</dd></div>
+              </dl>
+              <a class="text-link" href="reviews/niu-bqi-c3-pro.html">Read detailed review</a>
+            </div>
+          </article>
 
-      <section id="battery" class="section battery-section">
-        <div class="section-heading">
-          <p class="eyebrow">Battery safety</p>
-          <h2>Treat the battery like a major appliance, not a phone charger.</h2>
-          <p>
-            Lithium-ion packs store a lot of energy. FDNY guidance emphasizes
-            buying certified products, using the manufacturer's charger, storing
-            away from flammable materials, and stopping use immediately if a pack
-            changes shape, leaks, smells odd, makes noise, or overheats.
-          </p>
-        </div>
-        <div class="battery-grid">
-          <article>
-            <h3>Buy certified</h3>
-            <p>Look for third-party electrical safety certification. UL 2849 covers the e-bike electrical system; UL 2271 applies to light electric vehicle batteries.</p>
+          <article class="review-card">
+            <a class="review-image" href="reviews/aventon-aventure-2.html">
+              <img src="https://media.wired.com/photos/64f23b56254f73cfa970574f/191:100/w_1280,c_limit/Aventon-Aventure.2-Featured-Gear.jpg" alt="Aventon Aventure.2" loading="lazy">
+            </a>
+            <div class="review-body">
+              <div class="review-meta">
+                <span>Best Fat-Tire / All-Terrain</span>
+                <strong>★★★★☆ 4.3</strong>
+              </div>
+              <h3>Aventon Aventure.2</h3>
+              <p>A fun, stable all-terrain e-bike that can commute during the week and explore rougher surfaces on weekends.</p>
+              <dl class="mini-specs">
+                <div><dt>Price</dt><dd>Often around $1,500-$2,000 depending on sale</dd></div>
+                <div><dt>Range</dt><dd>Varies by terrain; strong practical range in review use</dd></div>
+              </dl>
+              <a class="text-link" href="reviews/aventon-aventure-2.html">Read detailed review</a>
+            </div>
           </article>
-          <article>
-            <h3>Charge defensively</h3>
-            <p>Use the original charger, plug directly into a wall outlet, charge on the floor when possible, and keep exits clear.</p>
-          </article>
-          <article>
-            <h3>Store calmly</h3>
-            <p>Keep batteries at room temperature, dry, out of direct sun, and away from anything that can burn.</p>
-          </article>
-          <article>
-            <h3>Replace correctly</h3>
-            <p>Use compatible manufacturer batteries. Do not rebuild, mix, or substitute packs unless the maker explicitly supports it.</p>
-          </article>
-        </div>
-      </section>
 
-      <section id="care" class="section">
-        <div class="section-heading">
-          <p class="eyebrow">Own it well</p>
-          <h2>The maintenance items that matter first.</h2>
-          <p>
-            E-bikes are still bicycles, but weight and motor assist make small
-            maintenance problems show up faster.
-          </p>
-        </div>
-        <div class="care-list">
-          <article>
-            <h3>Brakes</h3>
-            <p>E-bikes are heavier and faster than many analog bikes. Inspect pads often and favor hydraulic discs for cargo or hills.</p>
+          <article class="review-card">
+            <a class="review-image" href="reviews/specialized-turbo-vado-5.html">
+              <img src="https://cdn.mos.cms.futurecdn.net/6KUQcCvt6okX9NWEYkh3mk-2000-80.jpg" alt="Specialized Turbo Vado 5.0" loading="lazy">
+            </a>
+            <div class="review-body">
+              <div class="review-meta">
+                <span>Best Premium Commuter</span>
+                <strong>★★★★☆ 4.5</strong>
+              </div>
+              <h3>Specialized Turbo Vado 5.0</h3>
+              <p>A premium shop-supported commuter for people who want a refined ride, quality components, and dealer service.</p>
+              <dl class="mini-specs">
+                <div><dt>Price</dt><dd>Premium dealer-bike pricing</dd></div>
+                <div><dt>Range</dt><dd>High commuter range; depends on generation and assist</dd></div>
+              </dl>
+              <a class="text-link" href="reviews/specialized-turbo-vado-5.html">Read detailed review</a>
+            </div>
           </article>
-          <article>
-            <h3>Tires</h3>
-            <p>Keep pressure in range and choose puncture-resistant tires if your route includes glass, debris, or rough shoulders.</p>
-          </article>
-          <article>
-            <h3>Drivetrain</h3>
-            <p>Mid-drive motors add stress to chains and cassettes. Clean and lubricate regularly, then replace worn parts early.</p>
-          </article>
-          <article>
-            <h3>Battery</h3>
-            <p>Store it dry, avoid heat, use the supplied charger, and do not ignore damage, swelling, smells, or unusual heat.</p>
-          </article>
-          <article>
-            <h3>Bolts</h3>
-            <p>Racks, stems, kickstands, axle hardware, and child-seat mounts should be checked after early rides and then on a schedule.</p>
-          </article>
-          <article>
-            <h3>Software</h3>
-            <p>Keep display and motor firmware current when the maker supports updates, but avoid tuning that changes legal class behavior.</p>
+
+          <article class="review-card">
+            <a class="review-image" href="reviews/gazelle-eclipse-c380.html">
+              <img src="https://cloudinary.pondigital.solutions/pon-digital-solutions/image/upload/q_auto,f_auto/dmp.pon.bike/1280_E6GLelBLiMp29Iao.png" alt="Gazelle Eclipse C380+" loading="lazy">
+            </a>
+            <div class="review-body">
+              <div class="review-meta">
+                <span>Best Luxury / Comfort</span>
+                <strong>★★★★☆ 4.4</strong>
+              </div>
+              <h3>Gazelle Eclipse C380+</h3>
+              <p>A high-comfort luxury commuter with Bosch power, belt drive, and the details that make daily riding feel easy.</p>
+              <dl class="mini-specs">
+                <div><dt>Price</dt><dd>Premium Dutch commuter pricing</dd></div>
+                <div><dt>Range</dt><dd>Long practical commuter range</dd></div>
+              </dl>
+              <a class="text-link" href="reviews/gazelle-eclipse-c380.html">Read detailed review</a>
+            </div>
           </article>
         </div>
       </section>
 
-      <section id="security" class="section security-band">
+      <section id="manufacturers" class="section">
         <div class="section-heading">
-          <p class="eyebrow">Parking and theft</p>
-          <h2>Budget for security before accessories.</h2>
-          <p>
-            E-bikes are expensive, recognizable, and often parked outside. A lock
-            plan is part of the purchase, not an afterthought.
-          </p>
+          <p class="eyebrow">Manufacturer directory</p>
+          <h2>Who makes e-bikes, and where they fit.</h2>
+          <p>This directory is intentionally broad: value direct-to-consumer brands, dealer-supported bike companies, cargo specialists, Dutch comfort brands, and premium e-MTB makers.</p>
         </div>
-        <div class="security-grid">
-          <article>
-            <h3>Use two locks</h3>
-            <p>Pair a high-quality U-lock or chain with a second lock through the other wheel. Lock the frame to a fixed object.</p>
-          </article>
-          <article>
-            <h3>Remove the battery</h3>
-            <p>Take the battery and display when practical. It lowers theft value and prevents weather exposure.</p>
-          </article>
-          <article>
-            <h3>Record proof</h3>
-            <p>Save the serial number, receipt, photos, and component list. Register the bike where your city, campus, or insurer recommends.</p>
-          </article>
+        <div class="table-wrap">
+          <table class="maker-table">
+            <thead>
+              <tr><th>Manufacturer</th><th>Where they fit</th><th>Models to know</th></tr>
+            </thead>
+            <tbody>
+          <tr>
+            <th>Aventon</th>
+            <td>Value commuters, cargo, fat tire, and smart-security features</td>
+            <td>Level.3, Abound LR, Aventure.2, Pace</td>
+          </tr>
+
+          <tr>
+            <th>Lectric</th>
+            <td>Budget folding and utility e-bikes</td>
+            <td>XP4, XPedition, XP Trike</td>
+          </tr>
+
+          <tr>
+            <th>Ride1Up</th>
+            <td>Value road, city, and commuter bikes</td>
+            <td>Roadster V3, Portola, Prodigy</td>
+          </tr>
+
+          <tr>
+            <th>Rad Power / Rad Life</th>
+            <td>Utility, fat tire, and cargo heritage</td>
+            <td>Radster, RadRunner, RadWagon</td>
+          </tr>
+
+          <tr>
+            <th>Specialized</th>
+            <td>Premium commuter, road, and mountain e-bikes</td>
+            <td>Turbo Vado, Turbo Levo, Vado SL</td>
+          </tr>
+
+          <tr>
+            <th>Trek</th>
+            <td>Dealer-supported commuter, road, and trail</td>
+            <td>Verve+, Domane+, Rail+</td>
+          </tr>
+
+          <tr>
+            <th>Gazelle</th>
+            <td>Dutch comfort commuters with Bosch systems</td>
+            <td>Eclipse, Ultimate, Medeo</td>
+          </tr>
+
+          <tr>
+            <th>Tern</th>
+            <td>Compact cargo, folding, and family utility</td>
+            <td>HSD, GSD, Vektron</td>
+          </tr>
+
+          <tr>
+            <th>Riese &amp; Muller</th>
+            <td>Luxury cargo and touring e-bikes</td>
+            <td>Charger4, Nevo4, Load</td>
+          </tr>
+
+          <tr>
+            <th>Cannondale</th>
+            <td>Shop-supported fitness, commuter, and e-MTB</td>
+            <td>Synapse Neo, Moterra, Adventure Neo</td>
+          </tr>
+
+          <tr>
+            <th>Giant / Liv</th>
+            <td>Broad dealer-backed road, city, and mountain range</td>
+            <td>Explore E+, Road E+, Trance X E+</td>
+          </tr>
+
+          <tr>
+            <th>Santa Cruz</th>
+            <td>Premium e-mountain bikes</td>
+            <td>Heckler, Skitch</td>
+          </tr>
+
+          <tr>
+            <th>Yuba</th>
+            <td>Cargo and family bikes</td>
+            <td>Spicy Curry, Mundo Electric</td>
+          </tr>
+
+          <tr>
+            <th>Benno</th>
+            <td>Compact cargo and utility</td>
+            <td>Boost, RemiDemi</td>
+          </tr>
+
+          <tr>
+            <th>Urban Arrow</th>
+            <td>Front-loader family cargo</td>
+            <td>Family, Cargo</td>
+          </tr>
+
+          <tr>
+            <th>Brompton</th>
+            <td>Premium compact folding</td>
+            <td>Electric C Line, Electric G Line</td>
+          </tr>
+
+          <tr>
+            <th>Gocycle</th>
+            <td>Premium folding urban e-bikes</td>
+            <td>G4, G4i</td>
+          </tr>
+
+          <tr>
+            <th>Urtopia</th>
+            <td>Lightweight smart city and folding bikes</td>
+            <td>Carbon Fold 2, Carbon 1</td>
+          </tr>
+
+          <tr>
+            <th>Velotric</th>
+            <td>Comfort and value commuters</td>
+            <td>Discover 2, Nomad, T1</td>
+          </tr>
+
+          <tr>
+            <th>NIU</th>
+            <td>Long-range and micromobility crossover</td>
+            <td>BQi-C3 Pro</td>
+          </tr>
+
+          <tr>
+            <th>Tenways</th>
+            <td>Light belt-drive city e-bikes</td>
+            <td>CGO600 Pro, AGO T</td>
+          </tr>
+
+          <tr>
+            <th>Priority</th>
+            <td>Belt-drive low-maintenance commuters</td>
+            <td>Current Plus, E-Coast</td>
+          </tr>
+
+          <tr>
+            <th>Vvolt</th>
+            <td>Clean belt-drive city and commuter bikes</td>
+            <td>Centauri, Alpha</td>
+          </tr>
+
+          <tr>
+            <th>Co-op Cycles</th>
+            <td>REI-backed value commuters</td>
+            <td>CTY e-series</td>
+          </tr>
+
+          <tr>
+            <th>Cube</th>
+            <td>European trekking and e-MTB range</td>
+            <td>Reaction Hybrid, Kathmandu Hybrid</td>
+          </tr>
+
+          <tr>
+            <th>Canyon</th>
+            <td>Direct-to-consumer road, gravel, and city e-bikes</td>
+            <td>Pathlite:ON, Grail:ON</td>
+          </tr>
+
+          <tr>
+            <th>Orbea</th>
+            <td>Lightweight road, gravel, and e-MTB</td>
+            <td>Gain, Rise, Diem</td>
+          </tr>
+
+          <tr>
+            <th>Haibike</th>
+            <td>Sport and e-mountain heritage</td>
+            <td>AllMtn, Trekking</td>
+          </tr>
+
+          <tr>
+            <th>Blix</th>
+            <td>Utility, cruiser, and cargo</td>
+            <td>Packa, Vika, Sol</td>
+          </tr>
+
+          <tr>
+            <th>Mokwheel</th>
+            <td>Fat-tire and outdoor utility</td>
+            <td>Basalt, Obsidian</td>
+          </tr>
+            </tbody>
+          </table>
         </div>
       </section>
 
-      <section id="families" class="section">
+      <section id="safety" class="section safety-band">
         <div class="section-heading">
-          <p class="eyebrow">Families and new riders</p>
-          <h2>Match speed and responsibility to the rider.</h2>
-          <p>
-            For kids, teens, and first-time riders, the biggest risk is often a
-            bike that accelerates, weighs, or stops like something larger than
-            their skills. Start with supervised practice away from traffic.
-          </p>
+          <p class="eyebrow">Review criteria</p>
+          <h2>How the ratings are weighted.</h2>
         </div>
-        <div class="decision-grid">
-          <article>
-            <h3>For teen riders</h3>
-            <p>Check minimum-age laws, helmet rules, school policies, path restrictions, and whether Class 2 throttles or Class 3 bikes are allowed locally.</p>
-          </article>
-          <article>
-            <h3>For passengers</h3>
-            <p>Use only manufacturer-approved child seats, passenger kits, foot guards, handholds, and wheel skirts. Stay inside payload limits.</p>
-          </article>
-          <article>
-            <h3>For first rides</h3>
-            <p>Practice starting, stopping, signaling, U-turns, and emergency braking in the lowest assist setting before mixing with traffic.</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="compare" class="section checklist-section">
-        <div class="section-heading">
-          <p class="eyebrow">Shopping checklist</p>
-          <h2>Compare the details that show up after purchase.</h2>
-        </div>
-        <div class="checklist">
-          <label><input type="checkbox"> Test ride on the steepest hill you expect to climb</label>
-          <label><input type="checkbox"> Confirm local Class 1, 2, and 3 rules</label>
-          <label><input type="checkbox"> Verify the bike has a permanent class, speed, and wattage label if required locally</label>
-          <label><input type="checkbox"> Look for UL 2849 system certification or equivalent third-party electrical safety testing</label>
-          <label><input type="checkbox"> Verify replacement battery and charger availability</label>
-          <label><input type="checkbox"> Check rack, child seat, basket, and trailer compatibility</label>
-          <label><input type="checkbox"> Price a lock, helmet, pump, lights, and flat kit</label>
-          <label><input type="checkbox"> Ask who services the motor, display, and battery system</label>
-          <label><input type="checkbox"> Confirm total weight, folded size, and whether you can lift it where you live</label>
-          <label><input type="checkbox"> Save serial number, receipt, charger model, battery model, and warranty terms</label>
+        <div class="criteria-grid">
+          <article><h3>Category fit</h3><p>Does the bike do the job the buyer is hiring it for?</p></article>
+          <article><h3>Safety posture</h3><p>Brakes, battery certification claims, lighting, handling, and legal class clarity.</p></article>
+          <article><h3>Ownership</h3><p>Service network, parts availability, accessories, warranty, and storage reality.</p></article>
+          <article><h3>Value</h3><p>What the buyer gets after accounting for required accessories and likely discounts.</p></article>
         </div>
       </section>
 
       <section id="sources" class="section sources-section">
         <div class="section-heading">
-          <p class="eyebrow">Research notes</p>
-          <h2>Sources used for this guide.</h2>
+          <p class="eyebrow">Sources</p>
+          <h2>Research links used for the review hub.</h2>
         </div>
-        <div class="source-list">
-          <a href="https://www.law.cornell.edu/uscode/text/15/2085">15 U.S.C. 2085: federal low-speed electric bicycle definition</a>
-          <a href="https://www.ecfr.gov/current/title-16/chapter-II/subchapter-C/part-1512">16 CFR Part 1512: CPSC bicycle requirements</a>
-          <a href="https://www.nhtsa.gov/road-safety/bicycle-safety">NHTSA bicycle safety guidance</a>
-          <a href="https://www.fdnysmart.org/be-fdnysmart-when-using-any-devices-powered-by-lithium-ion-batteries/">FDNY lithium-ion battery safety tips</a>
-          <a href="https://www.shopulstandards.com/ProductDetail.aspx?productId=UL2849">UL 2849 electrical systems for eBikes standard</a>
-          <a href="https://www.shopulstandards.com/ProductDetail.aspx?productId=UL2271">UL 2271 batteries for light electric vehicle applications standard</a>
-          <a href="https://www.tomsguide.com/best-picks/best-electric-bikes">Tom's Guide 2026 tested e-bike roundup</a>
-          <a href="https://www.bicycling.com/bikes-gear/a70894696/aventon-level-3-e-bike-review/">Bicycling review of Aventon Level.3</a>
-          <a href="https://www.wired.com/review/lectric-xp4-750-electric-bike">WIRED review of Lectric XP4 750</a>
-          <a href="https://www.wired.com/review/velotric-discover-2">WIRED review of Velotric Discover 2</a>
-        </div>
+        <div class="source-list"><a href="https://www.law.cornell.edu/uscode/text/15/2085">15 U.S.C. 2085 federal low-speed electric bicycle definition</a>
+<a href="https://www.ecfr.gov/current/title-16/chapter-II/subchapter-C/part-1512">CPSC bicycle requirements, 16 CFR Part 1512</a>
+<a href="https://www.nhtsa.gov/road-safety/bicycle-safety">NHTSA bicycle safety guidance</a>
+<a href="https://www.fdnysmart.org/be-fdnysmart-when-using-any-devices-powered-by-lithium-ion-batteries/">FDNY lithium-ion battery safety tips</a>
+<a href="https://www.shopulstandards.com/ProductDetail.aspx?productId=UL2849">UL 2849 electrical systems for eBikes</a>
+<a href="https://www.tomsguide.com/best-picks/best-electric-bikes">Tom&#x27;s Guide 2026 tested e-bike roundup</a>
+<a href="https://www.bicycling.com/bikes-gear/a70894696/aventon-level-3-e-bike-review/">Bicycling Aventon Level.3 review</a>
+<a href="https://www.wired.com/review/lectric-xp4-750-electric-bike">WIRED Lectric XP4 750 review</a>
+<a href="https://www.wired.com/review/velotric-discover-2">WIRED Velotric Discover 2 review</a>
+<a href="https://www.tomsguide.com/vehicle-tech/electric-bikes/urtopia-carbon-fold-2-more-refined">Tom&#x27;s Guide Urtopia Carbon Fold 2 review</a></div>
       </section>
     </main>
-
     <footer class="site-footer">
-      <p>E-Bike Field Guide</p>
+      <p>E-Bike Review Index</p>
       <a href="#top">Back to top</a>
     </footer>
 
-    <script src="script.js"></script>
   </body>
 </html>
