@@ -245,7 +245,8 @@ h1 {
 .decision-grid,
 .spec-grid,
 .battery-grid,
-.security-grid {
+.security-grid,
+.model-grid {
   display: grid;
   gap: 1rem;
   margin-top: 2rem;
@@ -266,16 +267,100 @@ h1 {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.model-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .class-card,
 .decision-grid article,
 .formula-card,
 .spec-grid article,
 .battery-grid article,
-.security-grid article {
+.security-grid article,
+.model-card {
   padding: 1.2rem;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 8px;
+}
+
+.recommendations-section {
+  padding-top: 2rem;
+}
+
+.model-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 390px;
+}
+
+.featured-model {
+  border-color: rgb(47 143 116 / 46%);
+  box-shadow: var(--shadow);
+}
+
+.model-topline {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.8rem;
+  color: var(--clay);
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.stars {
+  flex: 0 0 auto;
+  color: #926800;
+  white-space: nowrap;
+  text-transform: none;
+}
+
+.model-card h3 {
+  margin: 0.9rem 0 0;
+  font-size: clamp(1.55rem, 3vw, 2.2rem);
+  line-height: 1;
+}
+
+.maker {
+  margin: 0.2rem 0 0.9rem;
+  color: var(--mint-dark);
+  font-weight: 900;
+}
+
+.model-card p:not(.maker) {
+  color: var(--muted);
+}
+
+.model-notes {
+  display: grid;
+  gap: 0.5rem;
+  margin: auto 0 1rem;
+}
+
+.model-notes div {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 0.7rem;
+}
+
+.model-notes dt {
+  color: var(--ink);
+  font-weight: 900;
+}
+
+.model-notes dd {
+  margin: 0;
+  color: var(--muted);
+}
+
+.model-card a {
+  align-self: flex-start;
+  color: var(--mint-dark);
+  font-weight: 900;
+  text-decoration: none;
+  border-bottom: 2px solid rgb(47 143 116 / 28%);
 }
 
 .class-card {
@@ -630,6 +715,7 @@ h1 {
   .spec-grid,
   .battery-grid,
   .security-grid,
+  .model-grid,
   .care-list,
   .checklist,
   .source-list {
