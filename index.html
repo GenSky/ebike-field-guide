@@ -18,10 +18,11 @@
         <span>E-Bike Field Guide</span>
       </a>
       <nav>
+        <a href="#classes">Classes</a>
         <a href="#choose">Choose</a>
         <a href="#range">Range</a>
-        <a href="#care">Care</a>
-        <a href="#compare">Compare</a>
+        <a href="#battery">Battery</a>
+        <a href="#compare">Checklist</a>
       </nav>
     </header>
 
@@ -47,15 +48,57 @@
       <section class="quick-stats" aria-label="Key e-bike planning numbers">
         <div>
           <strong>20-28 mph</strong>
-          <span>common assisted top speeds by class</span>
+          <span>common assisted top speeds in the U.S. class system</span>
         </div>
         <div>
-          <strong>25-70 mi</strong>
-          <span>realistic range spread across terrain and loads</span>
+          <strong>&lt;750 W</strong>
+          <span>federal low-speed e-bike motor threshold</span>
         </div>
         <div>
-          <strong>300-750 W</strong>
-          <span>typical motor rating range for daily riding</span>
+          <strong>UL 2849</strong>
+          <span>whole-system electrical safety certification to look for</span>
+        </div>
+      </section>
+
+      <section id="classes" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Rules first</p>
+          <h2>Know what counts as an e-bike before comparing models.</h2>
+          <p>
+            In U.S. federal consumer-product law, a low-speed electric bicycle has
+            pedals, less than 750 watts of motor power, and cannot exceed 20 mph
+            on motor power alone with the test rider specified in the statute.
+            State and local riding rules still decide where each bike can go.
+          </p>
+        </div>
+        <div class="class-grid" aria-label="Common e-bike classes">
+          <article class="class-card">
+            <span class="class-number">1</span>
+            <h3>Pedal assist</h3>
+            <p>Motor helps only while you pedal and stops assisting at 20 mph.</p>
+            <strong>Best fit:</strong>
+            <span>paths, commuting, riders who want the broadest access.</span>
+          </article>
+          <article class="class-card">
+            <span class="class-number">2</span>
+            <h3>Throttle capable</h3>
+            <p>Motor can propel the bike without pedaling and stops assisting at 20 mph.</p>
+            <strong>Best fit:</strong>
+            <span>stop-and-go errands, mobility support, heavier cargo starts.</span>
+          </article>
+          <article class="class-card">
+            <span class="class-number">3</span>
+            <h3>Speed pedal assist</h3>
+            <p>Motor helps only while you pedal and stops assisting at 28 mph.</p>
+            <strong>Best fit:</strong>
+            <span>longer road commutes where local rules allow it.</span>
+          </article>
+        </div>
+        <div class="notice">
+          <strong>Field check:</strong>
+          avoid bikes marketed as e-bikes if they lack working pedals, exceed the
+          legal class speed, or advertise motorcycle-like power. Those may be
+          regulated as mopeds or motorcycles instead of bicycles.
         </div>
       </section>
 
@@ -63,27 +106,46 @@
         <div class="section-heading">
           <p class="eyebrow">Start with the job</p>
           <h2>Pick the bike around the ride, not the spec sheet.</h2>
+          <p>
+            A good e-bike is boring in the right ways: it fits, stops confidently,
+            carries what you need, can be serviced nearby, and uses a battery
+            system you are comfortable storing at home.
+          </p>
         </div>
         <div class="type-grid">
           <article class="type-card">
             <span class="type-icon" aria-hidden="true">C</span>
             <h3>City Commuter</h3>
-            <p>Best for pavement, daily errands, and predictable routes. Prioritize lights, fenders, rack mounts, and upright geometry.</p>
+            <p>Best for pavement, daily errands, and predictable routes. Prioritize lights, fenders, rack mounts, upright geometry, and tires that shrug off debris.</p>
           </article>
           <article class="type-card">
             <span class="type-icon" aria-hidden="true">G</span>
             <h3>Cargo</h3>
-            <p>Best for kids, groceries, and car-replacement trips. Look for hydraulic brakes, a stable kickstand, and battery capacity.</p>
+            <p>Best for kids, groceries, and car-replacement trips. Look for hydraulic brakes, a stable kickstand, tested accessories, and a payload rating you will not exceed.</p>
           </article>
           <article class="type-card">
             <span class="type-icon" aria-hidden="true">T</span>
             <h3>Trail</h3>
-            <p>Best for rough surfaces and climbing. Suspension, tire clearance, torque, and local trail rules matter more than top speed.</p>
+            <p>Best for rough surfaces and climbing. Suspension, tire clearance, torque, and local trail rules matter more than top speed or throttle power.</p>
           </article>
           <article class="type-card">
             <span class="type-icon" aria-hidden="true">F</span>
             <h3>Folding</h3>
-            <p>Best for apartments, transit, and small storage. Check folded size, carry weight, hinge quality, and replacement tire availability.</p>
+            <p>Best for apartments, transit, and small storage. Check folded size, carry weight, hinge quality, wheel size, and whether parts are easy to replace.</p>
+          </article>
+        </div>
+        <div class="decision-grid">
+          <article>
+            <h3>Fit and control</h3>
+            <p>Choose a frame you can stand over, mount with a loaded rack, and steer slowly in a parking lot. Heavy bikes punish bad fit.</p>
+          </article>
+          <article>
+            <h3>Brake margin</h3>
+            <p>More speed plus more weight means longer stops. Favor strong disc brakes, especially for hills, wet weather, cargo, or passengers.</p>
+          </article>
+          <article>
+            <h3>Service access</h3>
+            <p>Before buying online, ask a local shop whether it will service that brand, motor system, battery, and brakes.</p>
           </article>
         </div>
       </section>
@@ -98,25 +160,112 @@
           </p>
         </div>
         <div class="range-layout">
-          <div class="range-meter" aria-label="Range planning meter">
+          <div class="range-meter" aria-label="Range planning examples">
             <div class="meter-row">
-              <span>Short errand</span>
+              <span>Flat errand</span>
               <div class="meter"><span style="width: 28%"></span></div>
             </div>
             <div class="meter-row">
-              <span>Daily commute</span>
+              <span>Mixed commute</span>
               <div class="meter"><span style="width: 54%"></span></div>
             </div>
             <div class="meter-row">
-              <span>Cargo route</span>
+              <span>Hills + cargo</span>
               <div class="meter"><span style="width: 72%"></span></div>
             </div>
           </div>
-          <ul class="plain-list">
-            <li>Use watt-hours, route length, hills, payload, and assist level to compare real range.</li>
-            <li>Cold weather and high speed can cut range sharply.</li>
-            <li>A removable battery is useful when the bike parks far from an outlet.</li>
-          </ul>
+          <div class="formula-card">
+            <h3>Simple range math</h3>
+            <p><strong>Battery watt-hours = volts x amp-hours.</strong></p>
+            <p>
+              Divide watt-hours by expected watt-hours per mile. Easy commuting
+              may be near the low end; fast riding, hills, cold weather, soft
+              tires, and cargo push consumption up.
+            </p>
+          </div>
+        </div>
+        <div class="spec-grid">
+          <article>
+            <h3>Battery size</h3>
+            <p>Common commuter packs land around 400-700 Wh. Cargo and long-range models may use larger or dual batteries.</p>
+          </article>
+          <article>
+            <h3>Assist level</h3>
+            <p>Eco mode stretches range. Turbo mode makes the bike feel effortless but drains the pack faster.</p>
+          </article>
+          <article>
+            <h3>Route load</h3>
+            <p>Hills, headwinds, low tire pressure, rough pavement, child seats, and panniers all change the number.</p>
+          </article>
+          <article>
+            <h3>Charging plan</h3>
+            <p>A removable battery helps apartment riders and workplaces where the bike parks away from outlets.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="drive" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Motor feel</p>
+          <h2>Choose the drive system by terrain and service needs.</h2>
+        </div>
+        <div class="compare-table" role="table" aria-label="E-bike drive system comparison">
+          <div class="table-row table-head" role="row">
+            <span role="columnheader">System</span>
+            <span role="columnheader">Strengths</span>
+            <span role="columnheader">Watch-outs</span>
+          </div>
+          <div class="table-row" role="row">
+            <span role="cell">Rear hub</span>
+            <span role="cell">Simple, often cheaper, good for flatter commuting.</span>
+            <span role="cell">Less natural on steep climbs; rear wheel service can be more involved.</span>
+          </div>
+          <div class="table-row" role="row">
+            <span role="cell">Mid-drive</span>
+            <span role="cell">Uses the bike's gears, climbs efficiently, balanced weight.</span>
+            <span role="cell">Usually costs more and wears chains, cassettes, or belts faster.</span>
+          </div>
+          <div class="table-row" role="row">
+            <span role="cell">Torque sensor</span>
+            <span role="cell">Adds assist in proportion to pedal pressure; smooth and bike-like.</span>
+            <span role="cell">Can cost more, but is worth prioritizing for shared paths and technical riding.</span>
+          </div>
+          <div class="table-row" role="row">
+            <span role="cell">Cadence sensor</span>
+            <span role="cell">Affordable and easy to ride once moving.</span>
+            <span role="cell">May surge after you start pedaling; test it in tight turns and traffic starts.</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="battery" class="section battery-section">
+        <div class="section-heading">
+          <p class="eyebrow">Battery safety</p>
+          <h2>Treat the battery like a major appliance, not a phone charger.</h2>
+          <p>
+            Lithium-ion packs store a lot of energy. FDNY guidance emphasizes
+            buying certified products, using the manufacturer's charger, storing
+            away from flammable materials, and stopping use immediately if a pack
+            changes shape, leaks, smells odd, makes noise, or overheats.
+          </p>
+        </div>
+        <div class="battery-grid">
+          <article>
+            <h3>Buy certified</h3>
+            <p>Look for third-party electrical safety certification. UL 2849 covers the e-bike electrical system; UL 2271 applies to light electric vehicle batteries.</p>
+          </article>
+          <article>
+            <h3>Charge defensively</h3>
+            <p>Use the original charger, plug directly into a wall outlet, charge on the floor when possible, and keep exits clear.</p>
+          </article>
+          <article>
+            <h3>Store calmly</h3>
+            <p>Keep batteries at room temperature, dry, out of direct sun, and away from anything that can burn.</p>
+          </article>
+          <article>
+            <h3>Replace correctly</h3>
+            <p>Use compatible manufacturer batteries. Do not rebuild, mix, or substitute packs unless the maker explicitly supports it.</p>
+          </article>
         </div>
       </section>
 
@@ -124,6 +273,10 @@
         <div class="section-heading">
           <p class="eyebrow">Own it well</p>
           <h2>The maintenance items that matter first.</h2>
+          <p>
+            E-bikes are still bicycles, but weight and motor assist make small
+            maintenance problems show up faster.
+          </p>
         </div>
         <div class="care-list">
           <article>
@@ -142,6 +295,65 @@
             <h3>Battery</h3>
             <p>Store it dry, avoid heat, use the supplied charger, and do not ignore damage, swelling, smells, or unusual heat.</p>
           </article>
+          <article>
+            <h3>Bolts</h3>
+            <p>Racks, stems, kickstands, axle hardware, and child-seat mounts should be checked after early rides and then on a schedule.</p>
+          </article>
+          <article>
+            <h3>Software</h3>
+            <p>Keep display and motor firmware current when the maker supports updates, but avoid tuning that changes legal class behavior.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="security" class="section security-band">
+        <div class="section-heading">
+          <p class="eyebrow">Parking and theft</p>
+          <h2>Budget for security before accessories.</h2>
+          <p>
+            E-bikes are expensive, recognizable, and often parked outside. A lock
+            plan is part of the purchase, not an afterthought.
+          </p>
+        </div>
+        <div class="security-grid">
+          <article>
+            <h3>Use two locks</h3>
+            <p>Pair a high-quality U-lock or chain with a second lock through the other wheel. Lock the frame to a fixed object.</p>
+          </article>
+          <article>
+            <h3>Remove the battery</h3>
+            <p>Take the battery and display when practical. It lowers theft value and prevents weather exposure.</p>
+          </article>
+          <article>
+            <h3>Record proof</h3>
+            <p>Save the serial number, receipt, photos, and component list. Register the bike where your city, campus, or insurer recommends.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="families" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Families and new riders</p>
+          <h2>Match speed and responsibility to the rider.</h2>
+          <p>
+            For kids, teens, and first-time riders, the biggest risk is often a
+            bike that accelerates, weighs, or stops like something larger than
+            their skills. Start with supervised practice away from traffic.
+          </p>
+        </div>
+        <div class="decision-grid">
+          <article>
+            <h3>For teen riders</h3>
+            <p>Check minimum-age laws, helmet rules, school policies, path restrictions, and whether Class 2 throttles or Class 3 bikes are allowed locally.</p>
+          </article>
+          <article>
+            <h3>For passengers</h3>
+            <p>Use only manufacturer-approved child seats, passenger kits, foot guards, handholds, and wheel skirts. Stay inside payload limits.</p>
+          </article>
+          <article>
+            <h3>For first rides</h3>
+            <p>Practice starting, stopping, signaling, U-turns, and emergency braking in the lowest assist setting before mixing with traffic.</p>
+          </article>
         </div>
       </section>
 
@@ -153,10 +365,29 @@
         <div class="checklist">
           <label><input type="checkbox"> Test ride on the steepest hill you expect to climb</label>
           <label><input type="checkbox"> Confirm local Class 1, 2, and 3 rules</label>
+          <label><input type="checkbox"> Verify the bike has a permanent class, speed, and wattage label if required locally</label>
+          <label><input type="checkbox"> Look for UL 2849 system certification or equivalent third-party electrical safety testing</label>
           <label><input type="checkbox"> Verify replacement battery and charger availability</label>
           <label><input type="checkbox"> Check rack, child seat, basket, and trailer compatibility</label>
           <label><input type="checkbox"> Price a lock, helmet, pump, lights, and flat kit</label>
           <label><input type="checkbox"> Ask who services the motor, display, and battery system</label>
+          <label><input type="checkbox"> Confirm total weight, folded size, and whether you can lift it where you live</label>
+          <label><input type="checkbox"> Save serial number, receipt, charger model, battery model, and warranty terms</label>
+        </div>
+      </section>
+
+      <section id="sources" class="section sources-section">
+        <div class="section-heading">
+          <p class="eyebrow">Research notes</p>
+          <h2>Sources used for this guide.</h2>
+        </div>
+        <div class="source-list">
+          <a href="https://www.law.cornell.edu/uscode/text/15/2085">15 U.S.C. 2085: federal low-speed electric bicycle definition</a>
+          <a href="https://www.ecfr.gov/current/title-16/chapter-II/subchapter-C/part-1512">16 CFR Part 1512: CPSC bicycle requirements</a>
+          <a href="https://www.nhtsa.gov/road-safety/bicycle-safety">NHTSA bicycle safety guidance</a>
+          <a href="https://www.fdnysmart.org/be-fdnysmart-when-using-any-devices-powered-by-lithium-ion-batteries/">FDNY lithium-ion battery safety tips</a>
+          <a href="https://www.shopulstandards.com/ProductDetail.aspx?productId=UL2849">UL 2849 electrical systems for eBikes standard</a>
+          <a href="https://www.shopulstandards.com/ProductDetail.aspx?productId=UL2271">UL 2271 batteries for light electric vehicle applications standard</a>
         </div>
       </section>
     </main>

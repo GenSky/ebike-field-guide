@@ -58,7 +58,8 @@ a {
 }
 
 .brand-mark,
-.type-icon {
+.type-icon,
+.class-number {
   display: inline-grid;
   place-items: center;
   width: 2rem;
@@ -240,6 +241,79 @@ h1 {
   font-size: 1.08rem;
 }
 
+.class-grid,
+.decision-grid,
+.spec-grid,
+.battery-grid,
+.security-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.class-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.decision-grid,
+.security-grid {
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 1rem;
+}
+
+.spec-grid,
+.battery-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.class-card,
+.decision-grid article,
+.formula-card,
+.spec-grid article,
+.battery-grid article,
+.security-grid article {
+  padding: 1.2rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.class-card {
+  min-height: 245px;
+}
+
+.class-card:nth-child(2) .class-number {
+  background: var(--clay);
+}
+
+.class-card:nth-child(3) .class-number {
+  color: var(--ink);
+  background: var(--sun);
+}
+
+.class-card strong {
+  display: block;
+  margin-top: 1rem;
+  color: var(--mint-dark);
+}
+
+.class-card span:not(.class-number) {
+  color: var(--muted);
+}
+
+.notice {
+  margin-top: 1rem;
+  padding: 1rem 1.1rem;
+  color: #31413e;
+  background: #fff7df;
+  border: 1px solid #edd58c;
+  border-radius: 8px;
+}
+
+.notice strong {
+  color: #6d4a00;
+}
+
 .type-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -270,15 +344,35 @@ h1 {
 }
 
 .type-card h3,
-.care-list h3 {
+.care-list h3,
+.class-card h3,
+.decision-grid h3,
+.formula-card h3,
+.spec-grid h3,
+.battery-grid h3,
+.security-grid h3 {
   margin: 1rem 0 0.45rem;
   font-size: 1.35rem;
 }
 
 .type-card p,
 .care-list p,
+.class-card p,
+.decision-grid p,
+.formula-card p,
+.spec-grid p,
+.battery-grid p,
+.security-grid p,
 .plain-list {
   color: var(--muted);
+}
+
+.decision-grid h3,
+.formula-card h3,
+.spec-grid h3,
+.battery-grid h3,
+.security-grid h3 {
+  margin-top: 0;
 }
 
 .range-band {
@@ -339,6 +433,61 @@ h1 {
   margin-top: 0.85rem;
 }
 
+.compare-table {
+  display: grid;
+  margin-top: 2rem;
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 0.8fr 1.25fr 1.25fr;
+  border-top: 1px solid var(--line);
+}
+
+.table-row:first-child {
+  border-top: 0;
+}
+
+.table-row span {
+  padding: 1rem;
+  border-left: 1px solid var(--line);
+}
+
+.table-row span:first-child {
+  border-left: 0;
+  font-weight: 900;
+}
+
+.table-head {
+  color: white;
+  background: var(--mint-dark);
+  font-weight: 900;
+}
+
+.table-head span {
+  border-color: rgb(255 255 255 / 18%);
+}
+
+.battery-section {
+  width: 100%;
+  max-width: none;
+  padding-inline: max(1rem, calc((100vw - 1180px) / 2));
+  background: #f6efe9;
+  border-block: 1px solid #ead8ca;
+}
+
+.security-band {
+  width: 100%;
+  max-width: none;
+  padding-inline: max(1rem, calc((100vw - 1180px) / 2));
+  background: #eef2f7;
+  border-block: 1px solid #d8e0ea;
+}
+
 .care-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -396,6 +545,34 @@ h1 {
   text-decoration: line-through;
 }
 
+.sources-section {
+  padding-top: 2rem;
+}
+
+.source-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.7rem;
+  margin-top: 2rem;
+}
+
+.source-list a {
+  min-height: 68px;
+  padding: 1rem;
+  color: var(--mint-dark);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.source-list a:hover,
+.source-list a:focus-visible {
+  border-color: var(--mint);
+  box-shadow: 0 0 0 3px rgb(47 143 116 / 14%);
+}
+
 .site-footer {
   display: flex;
   justify-content: space-between;
@@ -446,11 +623,35 @@ h1 {
   }
 
   .quick-stats,
+  .class-grid,
   .type-grid,
   .range-layout,
+  .decision-grid,
+  .spec-grid,
+  .battery-grid,
+  .security-grid,
   .care-list,
-  .checklist {
+  .checklist,
+  .source-list {
     grid-template-columns: 1fr;
+  }
+
+  .table-head {
+    display: none;
+  }
+
+  .table-row {
+    grid-template-columns: 1fr;
+  }
+
+  .table-row span {
+    border-left: 0;
+    border-top: 1px solid var(--line);
+  }
+
+  .table-row span:first-child {
+    border-top: 0;
+    background: #f4f7f5;
   }
 }
 
