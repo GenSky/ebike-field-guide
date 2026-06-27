@@ -269,6 +269,40 @@ MANUFACTURERS = [
 ]
 
 
+MANUFACTURER_URLS = {
+    "Aventon": "https://www.aventon.com/",
+    "Lectric": "https://lectricebikes.com/",
+    "Ride1Up": "https://ride1up.com/",
+    "Rad Power / Rad Life": "https://www.radpowerbikes.com/",
+    "Specialized": "https://www.specialized.com/us/en",
+    "Trek": "https://www.trekbikes.com/us/en_US/",
+    "Gazelle": "https://www.gazellebikes.com/en-us",
+    "Tern": "https://www.ternbicycles.com/us",
+    "Riese & Muller": "https://www.r-m.de/en-us/",
+    "Cannondale": "https://www.cannondale.com/en-us",
+    "Giant / Liv": "https://www.giant-bicycles.com/us/bikes/electric-bikes",
+    "Santa Cruz": "https://www.santacruzbicycles.com/en-US/bikes",
+    "Yuba": "https://yubabikes.com/",
+    "Benno": "https://bennobikes.com/",
+    "Urban Arrow": "https://urbanarrow.com/",
+    "Brompton": "https://us.brompton.com/c/electric-bikes",
+    "Gocycle": "https://gocycle.com/",
+    "Urtopia": "https://newurtopia.com/",
+    "Velotric": "https://www.velotricbike.com/",
+    "NIU": "https://www.niu.com/us",
+    "Tenways": "https://us.tenways.com/",
+    "Priority": "https://www.prioritybicycles.com/",
+    "Vvolt": "https://vvolt.com/",
+    "Co-op Cycles": "https://www.rei.com/b/co-op-cycles/c/electric-bikes",
+    "Cube": "https://www.cube.eu/",
+    "Canyon": "https://www.canyon.com/en-us/electric-bikes/",
+    "Orbea": "https://www.orbea.com/us-en/ebikes/",
+    "Haibike": "https://www.haibike.com/us/en",
+    "Blix": "https://blixbike.com/",
+    "Mokwheel": "https://www.mokwheel.com/",
+}
+
+
 SOURCES = [
     ("15 U.S.C. 2085 federal low-speed electric bicycle definition", "https://www.law.cornell.edu/uscode/text/15/2085"),
     ("CPSC bicycle requirements, 16 CFR Part 1512", "https://www.ecfr.gov/current/title-16/chapter-II/subchapter-C/part-1512"),
@@ -361,7 +395,7 @@ def build_index():
     manufacturer_rows = "\n".join(
         f"""
           <tr>
-            <th>{escape(name)}</th>
+            <th><a class="maker-link" href="{escape(MANUFACTURER_URLS[name], quote=True)}">{escape(name)}</a></th>
             <td>{escape(positioning)}</td>
             <td>{escape(models)}</td>
           </tr>"""
